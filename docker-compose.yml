@@ -1,0 +1,9 @@
+services:
+  aws-docker:
+    container_name: ubuntu-aws-docker
+    build:
+      context: .
+      dockerfile: Dockerfile
+    restart: always
+    image: devibhattaraii/ubuntu-aws-docker:v0.1.2
+    platform: linux/amd64
